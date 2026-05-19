@@ -1,0 +1,234 @@
+/* Global Styles */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+background-color: #ffffff;
+color: #333;
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+/* Color Palette */
+:root {
+--color-primary: #e74c3c;
+--color-dark: #222;
+--color-text: #555;
+--color-border: #f0f0f0;
+--color-background-light: #fafafa;
+--color-background-dark: #222;
+--color-success: #2ecc71;
+--color-text-light: #666;
+--color-footer: #222;
+}
+
+/* Animations */
+@keyframes slideInDown {
+from {
+opacity: 0;
+transform: translateY(-30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes slideInUp {
+from {
+opacity: 0;
+transform: translateY(30px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+@keyframes scaleIn {
+from {
+opacity: 0;
+transform: scale(0.95);
+}
+to {
+opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes pulse {
+0%, 100% {
+opacity: 1;
+}
+50% {
+opacity: 0.8;
+}
+}
+
+@keyframes spin {
+to {
+transform: rotate(360deg);
+}
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-weight: 700;
+letter-spacing: -0.5px;
+}
+
+h1 {
+font-size: 3.5rem;
+color: var(--color-dark);
+margin: 20px 0;
+}
+
+h2 {
+font-size: 2.5rem;
+color: var(--color-dark);
+margin-bottom: 40px;
+text-align: center;
+position: relative;
+padding-bottom: 20px;
+}
+
+h2::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 60px;
+height: 4px;
+background-color: var(--color-primary);
+border-radius: 2px;
+}
+
+h3 {
+font-size: 1.5rem;
+color: var(--color-dark);
+}
+
+p {
+color: var(--color-text);
+line-height: 1.8;
+}
+
+/* Links */
+a {
+color: var(--color-primary);
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+a:hover {
+color: #c0392b;
+}
+
+/* Forms */
+input,
+textarea {
+font-family: inherit;
+font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+outline: none;
+}
+
+/* Buttons */
+button {
+font-family: inherit;
+}
+
+/* Utility Classes */
+.container {
+width: 100%;
+min-height: 100vh;
+background-color: #ffffff;
+}
+
+.section-container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+section {
+padding: 80px 20px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--color-primary);
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #c0392b;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+h1 {
+font-size: 2.5rem;
+}
+
+h2 {
+font-size: 2rem;
+}
+
+h3 {
+font-size: 1.3rem;
+}
+
+section {
+padding: 60px 20px;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+font-size: 2rem;
+}
+
+h2 {
+font-size: 1.5rem;
+}
+
+section {
+padding: 40px 20px;
+}
+}

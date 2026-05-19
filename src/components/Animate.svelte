@@ -103,8 +103,8 @@
 	.enter-top {
 		opacity: 1;
 		transform: translateY(0);
-		margin: 10px;
-		height: calc(100% - 90px);
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	.enter-bottom {

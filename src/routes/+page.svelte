@@ -301,12 +301,19 @@ END:VCARD`;
 
 	<!-- FOOTER -->
 	<footer class="footer">
-		<p>&copy; 2024 Nicolò Santangelo. Tutti i diritti riservati.</p>
-		<p class="footer-tagline">Realizzato con SvelteKit</p>
+		<p>Nicolò Santangelo</p>
+		<p class="footer-tagline">Realizzato da <a href="https://rizzolo.cloud" target="_blank" rel="noopener noreferrer">RizzoloCloud</a></p>
 	</footer>
 </div>
 
 <style>
+
+	a{
+		color: #e74c3c;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
 	.container {
 		width: 100%;
 		min-height: 100vh;
@@ -438,7 +445,7 @@ END:VCARD`;
 	.section-container {
 		max-width: 1000px;
 		margin: 0 auto;
-		padding: 0 20px;
+		padding: 0 0px;
 	}
 
 	section {
@@ -501,6 +508,7 @@ END:VCARD`;
 	/* STARTUPS SECTION */
 	.startups {
 		background-color: white;
+		padding: 0px;
 	}
 
 	.startups-grid {
@@ -519,6 +527,7 @@ END:VCARD`;
 		transition: all 0.4s ease;
 		cursor: pointer;
 		height: 100%;
+		margin: 20px;
 	}
 
 	.startup-card:hover {
@@ -617,7 +626,7 @@ END:VCARD`;
 
 	.form-group input,
 	.form-group textarea {
-		width: calc(100% - 30px);
+		width: calc(100%);
 		padding: 12px 15px;
 		border: 2px solid #f0f0f0;
 		border-radius: 8px;
