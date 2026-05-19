@@ -56,7 +56,7 @@ EMAIL:nicolo@example.com
 URL:https://nicolosantangelo.com
 ADR;TYPE=WORK:;;Torino;TO;;ITALY
 NOTE:Economista e Imprenditore - Startup Founder
-ORG:Startup1; Startup2
+ORG:Economista & Imprenditore;
 X-TITLE:Founder & Economist
 END:VCARD`;
 
