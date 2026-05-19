@@ -777,8 +777,8 @@ END:VCARD`;
 		}
 
 		.profile-image {
-			width: 120px;
-			height: 120px;
+			width: 160px;
+			height: 160px;
 		}
 
 		.contact-form {
