@@ -21,7 +21,7 @@ const config = {
 			handleHttpError: 'warn'
 		},
 		paths: {
-			base: '/nicolo_santangelo'
+			base: ''
 		}
 	}
 };
