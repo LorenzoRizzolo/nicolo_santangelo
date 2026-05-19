@@ -745,10 +745,10 @@ END:VCARD`;
 			width: 100%;
 		}
 
-		.profile-image {
+		/* .profile-image {
 			width: 150px;
 			height: 150px;
-		}
+		} */
 
 		.startups-grid {
 			grid-template-columns: 1fr;
