@@ -51,13 +51,13 @@
 VERSION:3.0
 FN:Nicolò Santangelo
 N:Santangelo;Nicolò;;;
-TEL;TYPE=CELL:+39 3498383633
-EMAIL:nicolo@example.com
+TEL;TYPE=CELL:+39 349 838 3633
+EMAIL:nicolo@beebad.com
 URL:https://nicolosantangelo.com
 ADR;TYPE=WORK:;;Torino;TO;;ITALY
-NOTE:Economista e Imprenditore - Startup Founder
-ORG:Economista & Imprenditore;
-X-TITLE:Founder & Economist
+NOTE:Startup Builder & Business Development
+ORG:Nexus Launchpad;
+X-TITLE:Founder & Startup Builder
 END:VCARD`;
 
 		const blob = new Blob([vcard], { type: "text/vcard" });
@@ -79,7 +79,7 @@ END:VCARD`;
 			<div class="hero-content">
 				<Animate type="scale" duration={0.8} delay={200}>
 					<div class="profile-image-container">
-						<div class="profile-image">
+						<!-- <div class="profile-image">
 							<svg
 								viewBox="0 0 200 200"
 								xmlns="http://www.w3.org/2000/svg"
@@ -114,12 +114,12 @@ END:VCARD`;
 									Aggiungi immagine qui
 								</text>
 							</svg>
-						</div>
+						</div> -->
 					</div>
 				</Animate>
 
 				<h1>Nicolò Santangelo</h1>
-				<p class="subtitle">Economista & Imprenditore</p>
+				<p class="subtitle">Startup Builder & Business Development</p>
 				<p class="location">📍 Torino, Italia</p>
 
 				<div class="cta-buttons">
@@ -146,22 +146,23 @@ END:VCARD`;
 			<div class="section-container">
 				<h2>Chi Sono</h2>
 				<p>
-					Sono un economista con una passione per l'imprenditoria e
-					l'innovazione. Negli ultimi anni ho fondato e sviluppato due
-					startup, applicando i principi economici in contesti reali
-					di mercato.
+					Founder con background in Management Engineering, focalizzato su sviluppo startup, strutturazione aziendale e progetti strategici.
 				</p>
 				<p>
-					La mia formazione accademica in economia mi ha fornito una
-					solida base teorica, mentre l'esperienza pratica mi ha
-					insegnato l'importanza dell'adattabilità e della visione
-					strategica.
+					Esperienza in fundraising, business modeling, partnership, organizzazione team e operazioni startup-oriented.
+				</p>
+				<p>
+					Attualmente sviluppo <strong><a href="#projects">Nexus Launchpad</a></strong>, una piattaforma AI-human progettata per standardizzare i dati startup e generare documentazione investment-ready per acceleratori e startup program.
 				</p>
 
 				<Animate type="slideLeft" duration={0.7} delay={200}>
 					<div class="education-highlight">
-						<h3>🎓 Formazione</h3>
-						<p><strong>Laurea in Economia</strong></p>
+						<h3>🎓 Master in Management Engineering</h3>
+						<p><strong>Politecnico di Torino</strong></p>
+						<p style="font-size: 0.95rem; margin-top: 10px;">Focus: Business Strategy • Economic & Financial Analysis • Entrepreneurship • Decision Making</p>
+						<p style="font-size: 0.95rem;">
+							<a href="https://webthesis.biblio.polito.it/37263/1/tesi.pdf" target="_blank" rel="noopener noreferrer">📄 Leggi la tesi</a>
+						</p>
 					</div>
 				</Animate>
 			</div>
@@ -170,48 +171,54 @@ END:VCARD`;
 
 	<!-- STARTUPS SECTION -->
 	<Animate type="slideUp">
-		<section class="startups" id="startups">
+		<section class="startups" id="projects">
 			<div class="section-container">
 				<h2>I Miei Progetti</h2>
 
 				<div class="startups-grid">
-					<!-- STARTUP 1 -->
+					<!-- NEXUS LAUNCHPAD -->
 					<Animate type="slideUp" duration={0.7} delay={100}>
 						<div class="startup-card">
 							<div class="card-header">
 								<div class="card-icon">🚀</div>
-								<h3>Startup1</h3>
+								<h3>Nexus Launchpad</h3>
 							</div>
 							<p>
-								Una piattaforma innovativa che rivoluziona il
-								settore digitale. Focalizzata su soluzioni
-								scalabili e user-friendly per il mercato B2B.
+								Piattaforma AI-human infrastructure che standardizza i dati startup e genera documentazione investment-ready attraverso un sistema AI rule-based affinato con interazione umana.
 							</p>
 							<div class="card-features">
-								<span class="feature-tag">Innovazione</span>
-								<span class="feature-tag">Tecnologia</span>
-								<span class="feature-tag">Scalabilità</span>
+								<span class="feature-tag">AI Infrastructure</span>
+								<span class="feature-tag">Startup Ecosystem</span>
+								<span class="feature-tag">Business Strategy</span>
+							</div>
+							<div class="card-links" style="margin-top: 15px;">
+								<a href="/nexus" style="display: inline-block; margin-right: 10px;">📖 Scopri di Più</a>
+								<!-- <a href="https://nexus.rizzolo.cloud" target="_blank" rel="noopener noreferrer">🚀 Demo</a> -->
 							</div>
 						</div>
 					</Animate>
 
-					<!-- STARTUP 2 -->
+					<!-- BEEBAD ITALIA -->
 					<Animate type="slideUp" duration={0.7} delay={300}>
 						<div class="startup-card">
 							<div class="card-header">
-								<div class="card-icon">💡</div>
-								<h3>Startup2</h3>
+								<div class="card-icon">🍯</div>
+								<h3>BEEBAD Italia</h3>
 							</div>
 							<p>
-								Una soluzione intelligente che affronta le sfide
-								contemporanee del mercato. Combinando analisi
-								economica e tecnologia per creare valore
-								duraturo.
+								Sviluppo operativo e strategico di BEEBAD Italia, un progetto premium energy drink costruito attorno a formulazione honey-based, brand lifestyle e posizionamento entertainment-driven.
 							</p>
 							<div class="card-features">
-								<span class="feature-tag">Strategia</span>
-								<span class="feature-tag">Analisi</span>
-								<span class="feature-tag">Valore</span>
+								<span class="feature-tag">Consumer Brand</span>
+								<span class="feature-tag">Beverage</span>
+								<span class="feature-tag">Brand Strategy</span>
+							</div>
+							<div class="card-activities" style="margin-top: 15px; font-size: 0.9rem; color: #666;">
+								<div>✓ Fundraising</div>
+								<div>✓ Strategic Partnerships</div>
+								<div>✓ Business Modeling</div>
+								<div>✓ Team Coordination</div>
+								<div>✓ Go-to-Market Development</div>
 							</div>
 						</div>
 					</Animate>
@@ -290,8 +297,9 @@ END:VCARD`;
 				<Animate type="slideLeft" duration={0.8} delay={200}>
 					<div class="direct-contact">
 						<h3>Altre Vie di Contatto</h3>
-						<p>📧 Email: nicolo@example.com</p>
-						<p>📱 WhatsApp: +39 349 838 3633</p>
+						<p>📧 Email: <a href="mailto:nicolo@beebad.com">nicolo@beebad.com</a></p>
+						<p>📱 WhatsApp: <a href="https://wa.me/393498383633" target="_blank" rel="noopener noreferrer">+39 349 838 3633</a></p>
+						<p>💼 LinkedIn: <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">Nicolò Santangelo</a></p>
 						<p>📍 Torino, Italia</p>
 					</div>
 				</Animate>
@@ -702,6 +710,29 @@ END:VCARD`;
 		color: #666;
 		margin: 10px 0;
 		font-size: 1rem;
+	}
+
+	.card-links {
+		display: flex;
+		gap: 15px;
+	}
+
+	.card-links a {
+		display: inline-block;
+		padding: 8px 14px;
+		background-color: #f0f0f0;
+		border-radius: 6px;
+		transition: all 0.3s ease;
+		font-size: 0.9rem;
+	}
+
+	.card-links a:hover {
+		background-color: #e74c3c;
+		color: white;
+	}
+
+	.card-activities div {
+		margin: 5px 0;
 	}
 
 	/* FOOTER */
