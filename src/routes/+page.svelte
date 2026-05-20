@@ -53,10 +53,10 @@ FN:Nicolò Santangelo
 N:Santangelo;Nicolò;;;
 TEL;TYPE=CELL:+39 349 838 3633
 EMAIL:nicolo@beebad.com
-URL:https://nicolosantangelo.com
+URL:https://nicolo-santangelo.rizzolo.cloud/
 ADR;TYPE=WORK:;;Torino;TO;;ITALY
 NOTE:Startup Builder & Business Development
-ORG:Nexus Launchpad;
+ORG:Startup Builder & Business Development;
 X-TITLE:Founder & Startup Builder
 END:VCARD`;
 
