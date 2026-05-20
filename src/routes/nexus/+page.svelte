@@ -191,6 +191,7 @@
 		color: #222;
 		margin: 20px 0;
 		letter-spacing: -1px;
+		font-family: 'Playfair Display', serif;
 	}
 
 	.hero-subtitle {
