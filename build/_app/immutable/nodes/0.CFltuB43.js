@@ -1,0 +1,1 @@
+import{M as e,_ as t,d as n,g as r,p as i,v as a}from"../chunks/BCLluKeo.js";import"../chunks/DXLwiZ0H.js";var o=a(`<link rel="icon" href="/nicolo.ico"/>`);function s(a,s){var c=t();n(`12qhfyh`,e=>{r(e,o())}),i(e(c),()=>s.children),r(a,c)}export{s as component};
