@@ -79,42 +79,9 @@ END:VCARD`;
 			<div class="hero-content">
 				<Animate type="scale" duration={0.8} delay={200}>
 					<div class="profile-image-container">
-						<!-- <div class="profile-image">
-							<svg
-								viewBox="0 0 200 200"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<circle
-									cx="100"
-									cy="100"
-									r="98"
-									fill="#f0f0f0"
-									stroke="#e74c3c"
-									stroke-width="2"
-								/>
-								<circle
-									cx="100"
-									cy="70"
-									r="35"
-									fill="#e74c3c"
-									opacity="0.1"
-								/>
-								<path
-									d="M 70 140 Q 70 110 100 110 Q 130 110 130 140 L 130 160 Q 130 170 120 170 L 80 170 Q 70 170 70 160 Z"
-									fill="#e74c3c"
-									opacity="0.1"
-								/>
-								<text
-									x="100"
-									y="180"
-									text-anchor="middle"
-									font-size="12"
-									fill="#999"
-								>
-									Aggiungi immagine qui
-								</text>
-							</svg>
-						</div> -->
+						<div class="profile-image">
+							<img width="200" height="200" src="/nicolo.jpeg" alt="Nicolò Santangelo" />
+						</div>
 					</div>
 				</Animate>
 
@@ -808,10 +775,10 @@ END:VCARD`;
 			font-size: 1.5rem;
 		}
 
-		.profile-image {
+		/* .profile-image {
 			width: 160px;
 			height: 160px;
-		}
+		} */
 
 		.contact-form {
 			padding: 20px;
