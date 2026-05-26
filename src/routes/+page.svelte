@@ -1,8 +1,6 @@
 <script>
 	import Animate from "../components/Animate.svelte";
 
-	let { data } = $props();
-
 	let contactForm = {
 		name: "",
 		email: "",
@@ -49,23 +47,18 @@
 	}
 
 	function downloadVCard() {
-		const photoBase64 = data?.photoBase64 || '';
-		const photoTag = photoBase64 
-			? `PHOTO;ENCODING=BASE64;TYPE=JPEG:${photoBase64}\n`
-			: '';
-
 		const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Nicolò Santangelo
 N:Santangelo;Nicolò;;;
 TEL;TYPE=CELL:+39 349 838 3633
 EMAIL:nicolo@beebad.com
-URL:https://nicolo-santangelo.rizzolo.cloud/
+URL:https://nicolosantangelo.com
 ADR;TYPE=WORK:;;Torino;TO;;ITALY
 NOTE:Startup Builder & Business Development
-ORG:Startup Builder & Business Development;
+ORG:Nexus Launchpad;
 X-TITLE:Founder & Startup Builder
-${photoTag}END:VCARD`;
+END:VCARD`;
 
 		const blob = new Blob([vcard], { type: "text/vcard" });
 		const url = window.URL.createObjectURL(blob);
@@ -86,9 +79,42 @@ ${photoTag}END:VCARD`;
 			<div class="hero-content">
 				<Animate type="scale" duration={0.8} delay={200}>
 					<div class="profile-image-container">
-						<div class="profile-image">
-							<img width="200" height="200" src="/nicolo.jpeg" alt="Nicolò Santangelo" />
-						</div>
+						<!-- <div class="profile-image">
+							<svg
+								viewBox="0 0 200 200"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									cx="100"
+									cy="100"
+									r="98"
+									fill="#f0f0f0"
+									stroke="#e74c3c"
+									stroke-width="2"
+								/>
+								<circle
+									cx="100"
+									cy="70"
+									r="35"
+									fill="#e74c3c"
+									opacity="0.1"
+								/>
+								<path
+									d="M 70 140 Q 70 110 100 110 Q 130 110 130 140 L 130 160 Q 130 170 120 170 L 80 170 Q 70 170 70 160 Z"
+									fill="#e74c3c"
+									opacity="0.1"
+								/>
+								<text
+									x="100"
+									y="180"
+									text-anchor="middle"
+									font-size="12"
+									fill="#999"
+								>
+									Aggiungi immagine qui
+								</text>
+							</svg>
+						</div> -->
 					</div>
 				</Animate>
 
@@ -273,7 +299,7 @@ ${photoTag}END:VCARD`;
 						<h3>Altre Vie di Contatto</h3>
 						<p>📧 Email: <a href="mailto:nicolo@beebad.com">nicolo@beebad.com</a></p>
 						<p>📱 WhatsApp: <a href="https://wa.me/393498383633" target="_blank" rel="noopener noreferrer">+39 349 838 3633</a></p>
-						<p>💼 LinkedIn: <a href="https://www.linkedin.com/in/nicol%C3%B2-santangelo/" target="_blank" rel="noopener noreferrer">Nicolò Santangelo</a></p>
+						<p>💼 LinkedIn: <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">Nicolò Santangelo</a></p>
 						<p>📍 Torino, Italia</p>
 					</div>
 				</Animate>
@@ -782,10 +808,10 @@ ${photoTag}END:VCARD`;
 			font-size: 1.5rem;
 		}
 
-		/* .profile-image {
+		.profile-image {
 			width: 160px;
 			height: 160px;
-		} */
+		}
 
 		.contact-form {
 			padding: 20px;
