@@ -23,6 +23,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy version.json
+        run: mkdir -p build/_app && cp .svelte-kit/output/client/_app/version.json build/_app/version.json
+
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
