@@ -1,6 +1,9 @@
 <script>
 	import Animate from "../../components/Animate.svelte";
+	import FloatArrow from "../../components/FloatArrow.svelte";
 </script>
+
+<FloatArrow/>
 
 <div class="container">
 	<!-- HERO SECTION -->
