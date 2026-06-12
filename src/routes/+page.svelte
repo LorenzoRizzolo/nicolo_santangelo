@@ -46,7 +46,12 @@
 		}
 	}
 
-	function downloadVCard() {
+	async function downloadVCard() {
+
+		const response = await fetch('/vCardBase64.txt');
+        if (!response.ok) throw new Error('Impossibile recuperare la foto del contatto');
+        const photoBase64 = await response.text();
+
 		const vcard = `BEGIN:VCARD
 VERSION:3.0
 FN:Nicolò Santangelo
@@ -55,6 +60,7 @@ TEL;TYPE=CELL:+39 349 838 3633
 EMAIL:nicolo@beebad.com
 URL:https://nicolosantangelo.com
 ADR;TYPE=WORK:;;Torino;TO;;ITALY
+PHOTO;ENCODING=BASE64;TYPE=JPEG:${photoBase64}
 NOTE:Startup Builder & Business Development
 ORG:Nexus Launchpad;
 X-TITLE:Founder & Startup Builder

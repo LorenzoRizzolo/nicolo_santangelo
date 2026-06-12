@@ -312,7 +312,6 @@
 
 	.feature-card:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 10px 30px rgba(231, 76, 60, 0.15);
 	}
 
 	.feature-icon {
