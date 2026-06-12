@@ -136,6 +136,22 @@
 					</div>
 				</div>
 
+				<div class="photos-section">
+					<h2>Galleria Progetto</h2>
+					<div class="photos-grid">
+						<Animate type="slideUp" duration={0.7} delay={100}>
+							<div class="photo-card">
+								<img src="/nexus1.png" alt="Nexus Launchpad Preview 1" />
+							</div>
+						</Animate>
+						<Animate type="slideUp" duration={0.7} delay={200}>
+							<div class="photo-card">
+								<img src="/nexus2.png" alt="Nexus Launchpad Preview 2" />
+							</div>
+						</Animate>
+					</div>
+				</div>
+
 				<div class="cta-section">
 					<h2>Pronto a Iniziare?</h2>
 					<p>
@@ -373,6 +389,42 @@
 
 	.target-audience h2 {
 		margin-bottom: 20px;
+	}
+
+	.photos-section {
+		margin-top: 60px;
+	}
+
+	.photos-section h2 {
+		margin-bottom: 40px;
+	}
+
+	.photos-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	.photo-card {
+		position: relative;
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease;
+	}
+
+	.photo-card:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 12px 40px rgba(231, 76, 60, 0.2);
+	}
+
+	.photo-card img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
+		border-radius: 12px;
 	}
 
 	.target-audience > p {
