@@ -3,7 +3,7 @@
 	import FloatArrow from "../../components/FloatArrow.svelte";
 </script>
 
-<FloatArrow/>
+<FloatArrow text="Home"/>
 
 <div class="container">
 	<!-- HERO SECTION -->

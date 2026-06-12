@@ -1,10 +1,10 @@
 <script>
-    let { link = "/" } = $props();
+    let { link = "/", text = "Back" } = $props();
 </script>
 
 <a href={link}>
     <div class="arrow-container">
-        &#8656; Back
+        &#8656; {text}
     </div>
 </a>
 
