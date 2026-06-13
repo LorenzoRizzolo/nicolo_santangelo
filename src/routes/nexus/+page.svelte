@@ -2,8 +2,6 @@
 	import Animate from "../../components/Animate.svelte";
 	import FloatArrow from "../../components/FloatArrow.svelte";
 	import { onMount } from "svelte";
-
-	let videoLoaded = true;
 </script>
 
 <FloatArrow text="Home"/>
@@ -120,24 +118,23 @@
 								<img src="/nexus2.png" alt="Nexus Launchpad Preview 2" />
 							</div>
 						</Animate>
+					</div>
+				</div>
+
+				<div class="photos-section">
+					<h2>Galleria Video Progetto</h2>
+					<div class="photos-grid">
 						<Animate type="slideUp" duration={0.7} delay={300}>
 							<div class="photo-card video-card">
-								{#if videoLoaded}
-									<video
-										controls
-										preload="metadata"
-										poster="/nexus1.png"
-										aria-label="Nexus Launchpad Demo Video"
-									>
-										<source src="/video1.mp4" type="video/mp4" />
-										Il tuo browser non supporta il tag video.
-									</video>
-								{:else}
-									<div class="video-placeholder">
-										<div class="loader"></div>
-										<p>Video in caricamento...</p>
-									</div>
-								{/if}
+								<video
+									controls
+									preload="metadata"
+									poster="/nexus1.png"
+									aria-label="Nexus Launchpad Demo Video"
+								>
+									<source src="/video1.mp4" type="video/mp4" />
+									Il tuo browser non supporta il tag video.
+								</video>
 							</div>
 						</Animate>
 					</div>
