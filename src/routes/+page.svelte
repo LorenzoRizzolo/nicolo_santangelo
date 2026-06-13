@@ -92,7 +92,7 @@ END:VCARD`;
 				</Animate>
 
 				<h1>Nicolò Santangelo</h1>
-				<p class="subtitle">Startup Builder & Business Development</p>
+				<p class="subtitle">Business and Strategy Development</p>
 				<p class="location">📍 Torino, Italia</p>
 
 				<div class="cta-buttons">
