@@ -1,6 +1,9 @@
 <script>
 	import Animate from "../../components/Animate.svelte";
 	import FloatArrow from "../../components/FloatArrow.svelte";
+	import { onMount } from "svelte";
+
+	let videoLoaded = true;
 </script>
 
 <FloatArrow text="Home"/>
@@ -17,25 +20,6 @@
 				<p class="hero-description">
 					Genera documentazione investment-ready per acceleratori e startup program
 				</p>
-				<!-- <div class="cta-buttons">
-					<button
-						class="btn btn-primary"
-						onclick={() =>
-							document
-								.getElementById("details")
-								.scrollIntoView({ behavior: "smooth" })}
-					>
-						Scopri di Più
-					</button>
-					<a
-						href="https://nexus.rizzolo.cloud"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-secondary"
-					>
-						Accedi alla Piattaforma
-					</a>
-				</div> -->
 			</div>
 		</section>
 	</Animate>
@@ -112,14 +96,6 @@
 						Nexus Launchpad è ideale per:
 					</p>
 					<div class="audience-grid">
-						<!-- <div class="audience-card">
-							<div class="audience-icon">🚀</div>
-							<h4>Startup Founders</h4>
-							<p>
-								Prepara rapidamente documentazione
-								professionale e investment-ready.
-							</p>
-						</div> -->
 						<div class="audience-card">
 							<div class="audience-icon">🏢</div>
 							<h4>Acceleratori e Incubatori</h4>
@@ -142,6 +118,26 @@
 						<Animate type="slideUp" duration={0.7} delay={200}>
 							<div class="photo-card">
 								<img src="/nexus2.png" alt="Nexus Launchpad Preview 2" />
+							</div>
+						</Animate>
+						<Animate type="slideUp" duration={0.7} delay={300}>
+							<div class="photo-card video-card">
+								{#if videoLoaded}
+									<video
+										controls
+										preload="metadata"
+										poster="/nexus1.png"
+										aria-label="Nexus Launchpad Demo Video"
+									>
+										<source src="/video1.mp4" type="video/mp4" />
+										Il tuo browser non supporta il tag video.
+									</video>
+								{:else}
+									<div class="video-placeholder">
+										<div class="loader"></div>
+										<p>Video in caricamento...</p>
+									</div>
+								{/if}
 							</div>
 						</Animate>
 					</div>
@@ -396,7 +392,7 @@
 
 	.photos-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 30px;
 		margin-bottom: 40px;
 	}
@@ -418,8 +414,53 @@
 		width: 100%;
 		height: auto;
 		display: block;
-		object-fit: cover;
+		object-fit: contain;
 		border-radius: 12px;
+		background: #f9f9f9;
+	}
+
+	.video-card {
+		background: #000;
+	}
+
+	.video-card video {
+		width: 100%;
+		height: auto;
+		display: block;
+		border-radius: 12px;
+		max-height: 500px;
+	}
+
+	.video-placeholder {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		background: linear-gradient(135deg, #222 0%, #333 100%);
+		border-radius: 12px;
+		color: #fff;
+		font-size: 1.1rem;
+	}
+
+	.loader {
+		width: 50px;
+		height: 50px;
+		border: 4px solid #444;
+		border-top: 4px solid #e74c3c;
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+		margin-bottom: 20px;
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
 	}
 
 	.target-audience > p {
@@ -597,6 +638,11 @@
 
 		.audience-grid {
 			grid-template-columns: 1fr;
+		}
+
+		.photos-grid {
+			grid-template-columns: 1fr;
+			gap: 20px;
 		}
 	}
 </style>
