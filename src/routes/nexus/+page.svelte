@@ -112,30 +112,22 @@
 						Nexus Launchpad è ideale per:
 					</p>
 					<div class="audience-grid">
-						<div class="audience-card">
+						<!-- <div class="audience-card">
 							<div class="audience-icon">🚀</div>
 							<h4>Startup Founders</h4>
 							<p>
 								Prepara rapidamente documentazione
 								professionale e investment-ready.
 							</p>
-						</div>
+						</div> -->
 						<div class="audience-card">
 							<div class="audience-icon">🏢</div>
-							<h4>Acceleratori</h4>
+							<h4>Acceleratori e Incubatori</h4>
 							<p>
 								Standardizza i dati delle tue startup portfolio
 								e semplifica le valutazioni.
 							</p>
 						</div>
-						<!-- <div class="audience-card">
-							<div class="audience-icon">💼</div>
-							<h4>Investitori</h4>
-							<p>
-								Accedi a dati strutturati e documentazione
-								uniforme per migliori analisi.
-							</p>
-						</div> -->
 					</div>
 				</div>
 
