@@ -129,10 +129,24 @@
 								<video
 									controls
 									preload="metadata"
-									poster="/nexus1.png"
 									aria-label="Nexus Launchpad Demo Video"
 								>
 									<source src="/video1.mp4" type="video/mp4" />
+									Il tuo browser non supporta il tag video.
+								</video>
+							</div>
+						</Animate>
+					</div>
+
+					<div class="photos-grid">
+						<Animate type="slideUp" duration={0.7} delay={300}>
+							<div class="photo-card video-card">
+								<video
+									controls
+									preload="metadata"
+									aria-label="Nexus Launchpad Demo Video"
+								>
+									<source src="/video2.mp4" type="video/mp4" />
 									Il tuo browser non supporta il tag video.
 								</video>
 							</div>
